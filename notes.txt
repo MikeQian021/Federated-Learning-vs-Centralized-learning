@@ -1,0 +1,5 @@
+cd /d E:\Cifar_10_project\bayes-admm-main
+set WANDB_API_KEY=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
+
+E:\Cifar_10_project\bayes-admm-main>python .\train.py --wandb_log --benchmark fashionmnist_mid_iid --federated_method FedAvg --network_type MLP --hidden_sizes 200 200 --num_epochs_batch 100 --use_cuda --num_clients 10 --num_comm_rounds 200 --seed_init 42 --learning_rate_local 0.001
+python .\train.py --wandb_log --benchmark fashion_hetmnist --federated_method FedAvg --network_type MLP --hidden_sizes 200 200 --num_epochs_batch 300 --use_cuda --num_clients 10 --num_comm_rounds 200 --seed_init 42 --learning_rate 0.001
